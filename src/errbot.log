@@ -1,0 +1,160 @@
+2020-04-06 23:05:56,168 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2020-04-06 23:05:56,179 INFO     errbot.bootstrap          Found Backend plugin: Slack
+2020-04-06 23:05:56,240 ERROR    errbot.backends.slack     Could not start the Slack back-end
+Traceback (most recent call last):
+  File "/Users/hernan0216/.local/share/virtualenvs/t42bot-vDztcZvT/lib/python3.8/site-packages/errbot/backends/slack.py", line 25, in <module>
+    from slackclient import SlackClient
+ModuleNotFoundError: No module named 'slackclient'
+2020-04-06 23:05:56,242 CRITICAL errbot.backends.slack     You need to install the slackclient support in order to use the Slack backend.
+You can do `pip install errbot[slack]` to install it
+2020-04-06 23:07:17,310 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2020-04-06 23:07:17,315 INFO     errbot.bootstrap          Found Backend plugin: Telegram
+2020-04-06 23:07:17,855 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2020-04-06 23:07:17,974 INFO     errbot.backends.telegram_messenger Initializing connection
+2020-04-06 23:07:19,743 INFO     errbot.backends.telegram_messenger Connected
+2020-04-06 23:07:19,743 INFO     errbot.core               Activate internal commands
+2020-04-06 23:07:19,744 INFO     errbot.plugin_manager     Activate bot plugins...
+2020-04-06 23:07:19,745 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2020-04-06 23:07:19,749 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2020-04-06 23:07:19,750 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2020-04-06 23:07:19,752 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2020-04-06 23:07:19,753 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2020-04-06 23:07:19,754 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2020-04-06 23:07:19,755 INFO     errbot.plugin_manager     Activate plugin: Health.
+2020-04-06 23:07:19,756 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2020-04-06 23:07:19,757 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2020-04-06 23:07:19,758 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2020-04-06 23:07:19,758 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2020-04-06 23:07:19,758 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2020-04-06 23:07:19,759 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2020-04-06 23:07:19,759 INFO     errbot.core_plugins.wsview Webhook routing echo
+2020-04-06 23:07:19,760 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2020-04-06 23:07:19,760 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2020-04-06 23:07:19,760 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2020-04-06 23:07:19,762 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2020-04-06 23:07:19,763 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2020-04-06 23:07:19,767 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2020-04-06 23:07:19,768 INFO     errbot.plugin_manager     Activate plugin: Help.
+2020-04-06 23:07:19,770 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2020-04-06 23:07:19,771 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2020-04-06 23:07:19,772 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2020-04-06 23:07:19,773 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2020-04-06 23:07:19,773 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2020-04-06 23:07:19,774 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2020-04-06 23:07:19,774 INFO     errbot.plugin_manager     Activate plugin: Example.
+2020-04-06 23:07:19,775 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2020-04-06 23:07:19,775 INFO     errbot.core               Notifying connection to all the plugins...
+2020-04-06 23:07:19,776 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2020-04-06 23:07:19,776 INFO     errbot.core               Plugin activation done.
+2020-04-06 23:08:17,429 WARNING  errbot.backends.telegram_messenger Unhandled message type (not a text message) ignored
+2020-04-06 23:09:18,975 INFO     errbot.plugins.ACLs       Matching ACL {} against username 1071970684 for command Example:tryme.
+2020-04-06 23:09:18,976 INFO     errbot.core               Processing command "tryme" with parameters "" from 1071970684
+2020-04-06 23:10:09,252 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2020-04-06 23:11:10,287 INFO     errbot.plugins.ACLs       Matching ACL {} against username 1071970684 for command Utils:whoami.
+2020-04-06 23:11:10,287 INFO     errbot.core               Processing command "whoami" with parameters "" from 1071970684
+2020-04-06 23:11:34,506 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2020-04-06 23:11:34,507 INFO     errbot.backends.telegram_messenger Interrupt received, shutting down..
+2020-04-06 23:11:34,510 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2020-04-06 23:11:34,521 INFO     errbot.backends.base      Trigger shutdown
+2020-04-06 23:11:34,522 INFO     errbot.plugin_manager     Shutdown.
+2020-04-06 23:11:34,522 INFO     errbot.plugin_manager     Bye.
+2020-04-06 23:11:34,523 INFO     errbot.cli                Process exiting
+2020-04-06 23:12:15,975 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2020-04-06 23:12:15,982 INFO     errbot.bootstrap          Found Backend plugin: Telegram
+2020-04-06 23:12:16,512 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2020-04-06 23:12:16,633 INFO     errbot.backends.telegram_messenger Initializing connection
+2020-04-06 23:12:17,567 INFO     errbot.backends.telegram_messenger Connected
+2020-04-06 23:12:17,568 INFO     errbot.core               Activate internal commands
+2020-04-06 23:12:17,569 INFO     errbot.plugin_manager     Activate bot plugins...
+2020-04-06 23:12:17,569 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2020-04-06 23:12:17,574 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2020-04-06 23:12:17,575 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2020-04-06 23:12:17,577 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2020-04-06 23:12:17,577 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2020-04-06 23:12:17,580 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2020-04-06 23:12:17,580 INFO     errbot.plugin_manager     Activate plugin: Health.
+2020-04-06 23:12:17,582 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2020-04-06 23:12:17,583 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2020-04-06 23:12:17,584 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2020-04-06 23:12:17,585 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2020-04-06 23:12:17,585 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2020-04-06 23:12:17,585 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2020-04-06 23:12:17,586 INFO     errbot.core_plugins.wsview Webhook routing echo
+2020-04-06 23:12:17,587 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2020-04-06 23:12:17,587 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2020-04-06 23:12:17,587 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2020-04-06 23:12:17,589 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2020-04-06 23:12:17,591 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2020-04-06 23:12:17,593 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2020-04-06 23:12:17,593 INFO     errbot.plugin_manager     Activate plugin: Help.
+2020-04-06 23:12:17,595 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2020-04-06 23:12:17,595 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2020-04-06 23:12:17,597 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2020-04-06 23:12:17,598 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2020-04-06 23:12:17,598 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2020-04-06 23:12:17,601 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2020-04-06 23:12:17,601 INFO     errbot.plugin_manager     Activate plugin: Example.
+2020-04-06 23:12:17,603 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2020-04-06 23:12:17,603 INFO     errbot.core               Notifying connection to all the plugins...
+2020-04-06 23:12:17,603 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2020-04-06 23:12:17,603 INFO     errbot.core               Plugin activation done.
+2020-04-06 23:12:32,006 INFO     errbot.plugins.ACLs       Matching ACL {} against username 1071970684 for command Example:tryme.
+2020-04-06 23:12:32,007 INFO     errbot.core               Processing command "tryme" with parameters "" from 1071970684
+2020-04-06 23:13:22,284 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2020-04-06 23:17:19,226 INFO     errbot.plugins.ACLs       Matching ACL {} against username 1071970684 for command Example:tryme.
+2020-04-06 23:17:19,229 INFO     errbot.core               Processing command "tryme" with parameters "" from 1071970684
+2020-04-06 23:18:09,527 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2020-04-06 23:28:30,950 INFO     errbot.backends.telegram_messenger Interrupt received, shutting down..
+2020-04-06 23:28:30,960 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2020-04-06 23:28:30,971 INFO     errbot.backends.base      Trigger shutdown
+2020-04-06 23:28:30,972 INFO     errbot.plugin_manager     Shutdown.
+2020-04-06 23:28:30,972 INFO     errbot.plugin_manager     Bye.
+2020-04-06 23:28:30,972 INFO     errbot.cli                Process exiting
+2020-04-06 23:49:15,961 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2020-04-06 23:49:15,969 INFO     errbot.bootstrap          Found Backend plugin: Telegram
+2020-04-06 23:49:16,566 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2020-04-06 23:49:16,692 INFO     errbot.backends.telegram_messenger Initializing connection
+2020-04-06 23:49:17,785 INFO     errbot.backends.telegram_messenger Connected
+2020-04-06 23:49:17,785 INFO     errbot.core               Activate internal commands
+2020-04-06 23:49:17,786 INFO     errbot.plugin_manager     Activate bot plugins...
+2020-04-06 23:49:17,787 INFO     errbot.plugin_manager     Activate plugin: Example.
+2020-04-06 23:49:17,792 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2020-04-06 23:49:17,792 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2020-04-06 23:49:17,794 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2020-04-06 23:49:17,795 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2020-04-06 23:49:17,796 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2020-04-06 23:49:17,797 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2020-04-06 23:49:17,799 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2020-04-06 23:49:17,799 INFO     errbot.plugin_manager     Activate plugin: Health.
+2020-04-06 23:49:17,801 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2020-04-06 23:49:17,801 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2020-04-06 23:49:17,803 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2020-04-06 23:49:17,803 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2020-04-06 23:49:17,803 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2020-04-06 23:49:17,804 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2020-04-06 23:49:17,804 INFO     errbot.core_plugins.wsview Webhook routing echo
+2020-04-06 23:49:17,805 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2020-04-06 23:49:17,805 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2020-04-06 23:49:17,806 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2020-04-06 23:49:17,809 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2020-04-06 23:49:17,811 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2020-04-06 23:49:17,814 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2020-04-06 23:49:17,815 INFO     errbot.plugin_manager     Activate plugin: Help.
+2020-04-06 23:49:17,816 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2020-04-06 23:49:17,817 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2020-04-06 23:49:17,818 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2020-04-06 23:49:17,819 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2020-04-06 23:49:17,819 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2020-04-06 23:49:17,820 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2020-04-06 23:49:17,820 INFO     errbot.core               Notifying connection to all the plugins...
+2020-04-06 23:49:17,820 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2020-04-06 23:49:17,820 INFO     errbot.core               Plugin activation done.
+2020-04-06 23:49:32,691 INFO     errbot.plugins.ACLs       Matching ACL {} against username 1071970684 for command Example:tryme.
+2020-04-06 23:49:32,691 INFO     errbot.core               Processing command "tryme" with parameters "" from 1071970684
+2020-04-06 23:50:23,017 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2020-04-06 23:50:58,945 INFO     errbot.backends.telegram_messenger Interrupt received, shutting down..
+2020-04-06 23:50:58,952 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2020-04-06 23:50:58,960 INFO     errbot.backends.base      Trigger shutdown
+2020-04-06 23:50:58,961 INFO     errbot.plugin_manager     Shutdown.
+2020-04-06 23:50:58,961 INFO     errbot.plugin_manager     Bye.
+2020-04-06 23:50:58,961 INFO     errbot.cli                Process exiting

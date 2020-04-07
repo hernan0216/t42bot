@@ -1,0 +1,6 @@
+version: '2.1'
+services:
+  t42bot:
+    build: .
+    environment:
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}

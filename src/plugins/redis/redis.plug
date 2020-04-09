@@ -1,0 +1,9 @@
+[Core]
+Name = Redis
+Module = Redis
+
+[Documentation]
+Description = This is a redis plugin to store information about a grup members
+
+[Python]
+Version = 3+

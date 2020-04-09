@@ -216,10 +216,10 @@ BOT_IDENTITY = {
 #
 # Unix-style glob patterns are supported, so 'gbin@localhost'
 # would be considered an admin if setting '*@localhost'.
-BOT_ADMINS = ('1071970684',)
+BOT_ADMINS = (1071970684,)
 
 # Set of admins that wish to receive administrative bot notifications.
-#BOT_ADMINS_NOTIFICATIONS = ()
+# BOT_ADMINS_NOTIFICATIONS = ()
 
 # Chatrooms your bot should join on startup. For the IRC backend you
 # should include the # sign here. For XMPP rooms that are password

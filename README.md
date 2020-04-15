@@ -1,3 +1,4 @@
 # T42 bot
+`export TELEGRAM_TOKEN ='xxxx'`
+`docker-compose up`
 
-shuld run with `docker-compose up`
